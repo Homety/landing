@@ -325,6 +325,10 @@ template {
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 :focus, :active {
   outline: none;
 }
