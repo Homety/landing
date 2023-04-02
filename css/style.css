@@ -325,10 +325,6 @@ template {
   box-sizing: border-box;
 }
 
-body{
-  overflow-x: hidden;
-}
-
 :focus, :active {
   outline: none;
 }
@@ -443,7 +439,7 @@ table {
   color: black;
 }
 
-.second-section__block3 .container_block span, .second-section__block2 .container_block span, .second-section__block1 .container_block span, .title {
+.second-section__block3 .container_block p, .second-section__block2 .container_block p, .second-section__block1 .container_block p, .title {
   font-family: Montserrat-SemiBold, sans-serif;
   font-size: 72px;
 }
@@ -451,6 +447,10 @@ table {
 .right-piece__text p, .buttons__chat, .buttons__lesson, .right-wrapper__text {
   font-family: Montserrat-Regular, sans-serif;
   font-size: 16px;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .container {
@@ -630,8 +630,8 @@ table {
   width: 200px;
   height: 60px;
   background: #F28B64;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
   margin-right: 32px;
   font-size: 18px;
@@ -725,29 +725,31 @@ table {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-right: 30px;
 }
 .second-section__block1 img {
   width: 197px;
   height: 335px;
 }
 .second-section__block1 .container_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
-.second-section__block1 .container_block span {
+.second-section__block1 .container_block p {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   font-size: 36px;
-}
-.second-section__block1 .guitar {
-  margin-bottom: 9px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .second-section__block2 {
   width: 360px;
@@ -762,29 +764,31 @@ table {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-right: 30px;
 }
 .second-section__block2 img {
   width: 197px;
   height: 335px;
 }
 .second-section__block2 .container_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
-.second-section__block2 .container_block span {
+.second-section__block2 .container_block p {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   font-size: 36px;
-}
-.second-section__block2 .guitar {
-  margin-bottom: 55px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .second-section__block3 {
   width: 360px;
@@ -805,22 +809,25 @@ table {
   height: 335px;
 }
 .second-section__block3 .container_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 auto;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
-.second-section__block3 .container_block span {
+.second-section__block3 .container_block p {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   font-size: 36px;
-}
-.second-section__block3 .guitar {
-  margin-bottom: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 .second-section__caption {
   margin-bottom: 40px;
@@ -968,14 +975,14 @@ table {
 
 @font-face {
   font-family: "Montserrat-Regular";
-  src: url("../fonts/icomoon/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat-Regular.eot");
   src: local("☺"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat-SemiBold";
-  src: url("../fonts/icomoon/Nunito-SemiBold.eot");
+  src: url("../fonts/Nunito-SemiBold.eot");
   src: local("☺"), url("../fonts/Nunito-SemiBold.woff") format("woff"), url("../fonts/Nunito-SemiBold.ttf") format("truetype"), url("../fonts/Nunito-SemiBold.svg") format("svg");
   font-weight: normal;
   font-style: normal;
@@ -1132,31 +1139,23 @@ table {
   }
   .second-section__block1 {
     height: 250px;
-    margin-right: 20px;
   }
   .second-section__block1 img {
     width: 128px;
     height: 236px;
   }
-  .second-section__block1 .container_block span {
+  .second-section__block1 .container_block p {
     font-size: 32px;
-  }
-  .second-section__block1 .guitar {
-    margin-bottom: 11px;
   }
   .second-section__block2 {
     height: 250px;
-    margin-right: 20px;
   }
   .second-section__block2 img {
     width: 128px;
     height: 236px;
   }
-  .second-section__block2 .container_block span {
+  .second-section__block2 .container_block p {
     font-size: 32px;
-  }
-  .second-section__block2 .guitar {
-    margin-bottom: 52px;
   }
   .second-section__block3 {
     height: 250px;
@@ -1165,11 +1164,8 @@ table {
     width: 128px;
     height: 236px;
   }
-  .second-section__block3 .container_block span {
+  .second-section__block3 .container_block p {
     font-size: 32px;
-  }
-  .second-section__block3 .guitar {
-    margin-bottom: 6px;
   }
   .second-section .title hr {
     position: absolute;
@@ -1591,6 +1587,9 @@ table {
   }
   .footer__icons-box {
     padding-left: 79px;
+  }
+  .footer {
+    min-height: 250px;
   }
 }
 @media screen and (max-width: 332px) {
